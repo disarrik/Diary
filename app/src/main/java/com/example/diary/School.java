@@ -28,4 +28,10 @@ public class School {
         Participant[] participants = new Participant[4];
         return participants;
     }
+    public void addTeacher(String fullName, int phone, int cardID, String position, String qualification) {
+        // TODO: 15.01.2021 Реализовать добавление учителя
+    }
+    public void addEmployee(String fullName, int phone, int cardID, String position) {
+        // TODO: 15.01.2021 Реализовать добавление работника
+    }
 }
