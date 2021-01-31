@@ -1,37 +1,87 @@
 package com.example.diary;
 
-public class School {
-    private Employee employes[];
-    private Teacher teachers[];
-    private Learner learners[];
-    private String adress;
-    private String name;
-    private Class classes[];
-    private Elective Electives[];
-    private Section Sections[];
-    private Journal journal;
+import java.util.Arrays;
 
-    public Teacher[] getListTeachers() {
+public class School {
+    private static Employee employees[] = {};
+    private static Teacher teachers[] = {};
+    private static Learner learners[] = {};
+    private static String address = "344000, г. Ростов-на-Дону, ул. Знаний, д.1";
+    private static String name = "Школа";
+    private static Class classes[] = {};
+    private static Elective electives[] = {};
+    private static Section sections[] = {};
+    private static Journal journal;
+
+    public static Teacher[] getListTeachers() {
         return teachers;
     }
-    public Employee[] getListEmployeers() {
-        return employes;
+
+    public static Employee[] getListEmployees() {
+        return employees;
     }
-    public Learner[] getListLearners() {
+
+    public static Learner[] getListLearners() {
         return learners;
     }
-    public Journal getElectronicJournal() {
+
+    public static Journal getElectronicJournal() {
         return journal;
     }
-    public Participant[] getParticipant() {
-        // TODO: 14.01.2021 составить список всех людей с пропусками (класс Participant)
-        Participant[] participants = new Participant[4];
+
+    public static Participant[] getParticipant() {
+        Participant[] participants = new Participant[employees.length + teachers.length + learners.length];
+        int counter = 0;
+        for (int i = 0; i < employees.length; i++) {
+            participants[counter] = employees[i];
+            counter++;
+        }
+        for (int i = 0; i < teachers.length; i++) {
+            participants[counter] = teachers[i];
+            counter++;
+        }
+        for (int i = 0; i < learners.length; i++) {
+            participants[counter] = learners[i];
+            counter++;
+        }
         return participants;
     }
-    public void addTeacher(String fullName, int phone, int cardID, String position, String qualification) {
-        // TODO: 15.01.2021 Реализовать добавление учителя
+
+    public static void addTeacher(String fullName, int phone, int cardID, String position, String qualification) {
+        Teacher newTeacher = new Teacher(fullName, phone, cardID, position, qualification);
+        teachers = Arrays.copyOf(teachers, teachers.length + 1);
+        teachers[teachers.length-1] = newTeacher;
     }
-    public void addEmployee(String fullName, int phone, int cardID, String position) {
-        // TODO: 15.01.2021 Реализовать добавление работника
+
+    public static void addEmployee(String fullName, int phone, int cardID, String position) {
+        Employee newEmployee = new Employee(fullName, phone, cardID, position);
+        employees = Arrays.copyOf(employees, employees.length + 1);
+        employees[employees.length-1] = newEmployee;
     }
+    
+    public static void addLearner(String fullName, int phone, int cardID, Parent[] parents) {
+        Learner newLearner = new Learner(fullName, phone, cardID, parents);
+        learners = Arrays.copyOf(learners, learners.length + 1);
+        learners[learners.length-1] = newLearner;
+    }
+
+    public static void addClass(String number, Teacher classTeacher, Learner[] learners) {
+        Class newClass = new Class(number, classTeacher, learners);
+        classes = Arrays.copyOf(classes, classes.length + 1);
+        classes[classes.length-1] = newClass;
+    }
+
+    public static void addElective(String academicSubject, Learner[] learners, Teacher classTeacher) {
+        Elective newElective = new Elective(academicSubject, learners, classTeacher);
+        electives = Arrays.copyOf(electives, electives.length + 1);
+        electives[electives.length-1] = newElective;
+    }
+
+    public static void addSection(String name, Learner[] learners, Teacher classTeacher) {
+        Section newSection = new Section(name, learners, classTeacher);
+        sections = Arrays.copyOf(sections, sections.length + 1);
+        sections[sections.length-1] = newSection;
+    }
+
+
 }

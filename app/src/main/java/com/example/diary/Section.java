@@ -16,9 +16,11 @@ public class Section {
     }
 
     public String getListString() {
-        // TODO: 15.01.2021 Реализовать функци. отображения списка строкой
-        String list = "";
-        return list;
+        String result = "";
+        for (Learner learner: learners) {
+            result += learner.getFullName() + '\n';
+        }
+        return result;
     }
 
     public Learner[] getList() {
@@ -26,9 +28,14 @@ public class Section {
     }
 
     public String getListParentsString() {
-        // TODO: 15.01.2021 Реализовать функци. отображения списка строкой 
-        String list = "";
-        return list;
+        String result = "";
+        for (Learner learner: learners) {
+            result += learner.getFullName() + '\n';
+            for (Parent parent: learner.getParents()) {
+                result += parent.getFullName() + '\n';
+            }
+        }
+        return result;
     }
 
     public Person[] getListParents() {

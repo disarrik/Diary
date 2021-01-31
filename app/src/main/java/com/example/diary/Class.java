@@ -16,8 +16,11 @@ public class Class {
     }
 
     public String getListString() {
-        String list = "";
-        return list;
+        String result = "";
+        for (Learner learner: learners) {
+            result += learner.getFullName() + '\n';
+        }
+        return result;
     }
 
     public Learner[] getList() {
@@ -25,8 +28,14 @@ public class Class {
     }
 
     public String getListParentsString() {
-        String list = "";
-        return list;
+        String result = "";
+        for (Learner learner: learners) {
+            result += learner.getFullName() + '\n';
+            for (Parent parent: learner.getParents()) {
+                result += parent.getFullName() + '\n';
+            }
+        }
+        return result;
     }
 
     public void addLearner(Learner newLearner) {

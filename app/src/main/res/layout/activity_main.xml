@@ -27,7 +27,7 @@
             android:text="Добавить учителя" />
 
         <Button
-            android:id="@+id/addClass"
+            android:id="@+id/btnAddClass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Добавить класс/секцию/электив" />
