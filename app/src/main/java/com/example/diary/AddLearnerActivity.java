@@ -15,9 +15,9 @@ public class AddLearnerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_learner);
 
-        EditText fullName = (EditText) findViewById(R.id.fullName);
-        EditText phone = (EditText) findViewById(R.id.phone);
-        EditText cardID = (EditText) findViewById(R.id.cardID);
+        EditText fullName = (EditText) findViewById(R.id.fullNameLearner);
+        EditText phone = (EditText) findViewById(R.id.phoneLearner);
+        EditText cardID = (EditText) findViewById(R.id.cardIDLearner);
         EditText parentFullName1 = (EditText) findViewById(R.id.parentFullName1);
         EditText parentPhone1 = (EditText) findViewById(R.id.parentPhone1);
         EditText parentFullName2 = (EditText) findViewById(R.id.parentFullName2);

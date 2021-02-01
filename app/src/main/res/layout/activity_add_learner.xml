@@ -10,22 +10,22 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/fullName"
+            android:id="@+id/fullNameLearner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Полное имя" />
+            android:hint="Полное имя" />
 
         <EditText
-            android:id="@+id/phone"
+            android:id="@+id/phoneLearner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Телефон" />
+            android:hint="Телефон" />
 
         <EditText
-            android:id="@+id/cardID"
+            android:id="@+id/cardIDLearner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="cardID" />
+            android:hint="cardID" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -41,13 +41,13 @@
                     android:id="@+id/parentFullName1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Полное имя родителя 1" />
+                    android:hint="Полное имя родителя 1" />
 
                 <EditText
                     android:id="@+id/parentPhone1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Телефон родителя 1" />
+                    android:hint="Телефон родителя 1" />
             </LinearLayout>
 
             <LinearLayout
@@ -59,13 +59,13 @@
                     android:id="@+id/parentFullName2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Полное имя родителя 2" />
+                    android:hint="Полное имя родителя 2" />
 
                 <EditText
                     android:id="@+id/parentPhone2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Телефон родителя 2" />
+                    android:hint="Телефон родителя 2" />
             </LinearLayout>
 
         </LinearLayout>
@@ -74,7 +74,7 @@
             android:id="@+id/addLearner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Добавить" />
+            android:hint="Добавить" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

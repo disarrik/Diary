@@ -27,10 +27,28 @@
             android:text="Добавить учителя" />
 
         <Button
+            android:id="@+id/btnAddEmployee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Добавить работника" />
+
+        <Button
             android:id="@+id/btnAddClass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Добавить класс/секцию/электив" />
+            android:text="Добавить класс" />
+
+        <Button
+            android:id="@+id/btnAddSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Добавить секцию" />
+
+        <Button
+            android:id="@+id/btnAddElective"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Добавить электив" />
 
         <Button
             android:id="@+id/btnShowTeachers"

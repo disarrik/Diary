@@ -16,7 +16,10 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnAddLearner = (Button) findViewById(R.id.btnAddLearner);
         Button btnAddTeacher = (Button) findViewById(R.id.btnAddTeacher);
+        Button btnAddEmployee = (Button) findViewById(R.id.btnAddEmployee);
         Button btnAddClass = (Button) findViewById(R.id.btnAddClass);
+        Button btnAddElective = (Button) findViewById(R.id.btnAddElective);
+        Button btnAddSection = (Button) findViewById(R.id.btnAddSection);
         Button btnShowTeachers = (Button) findViewById(R.id.btnShowTeachers);
         Button btnShowLearners = (Button) findViewById(R.id.btnShowLearners);
         Button btnShowParticipants = (Button) findViewById(R.id.btnShowParticipants);
@@ -51,6 +54,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ShowTeachersActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnAddEmployee.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AddEmployeeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnShowParticipants.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ShowParticipantsActivity.class);
                 startActivity(intent);
             }
         });

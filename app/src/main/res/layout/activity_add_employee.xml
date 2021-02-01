@@ -9,7 +9,7 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/fullNameTeacher"
+            android:id="@+id/fullNameEmployee"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -17,7 +17,7 @@
             android:hint="Полное имя" />
 
         <EditText
-            android:id="@+id/phoneTeacher"
+            android:id="@+id/phoneEmployee"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -25,33 +25,26 @@
             android:hint="Телефон" />
 
         <EditText
-            android:id="@+id/cardIDTeacher"
+            android:id="@+id/cardIDEmployee"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:hint="cardID" />
+            android:hint="CardID" />
 
         <EditText
-            android:id="@+id/positionTeacher"
+            android:id="@+id/positionEmplyee"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
             android:hint="Должность" />
 
-        <EditText
-            android:id="@+id/qualificationTeacher"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="Квалификация" />
-
         <Button
-            android:id="@+id/addTeacher"
+            android:id="@+id/btnAddEmployee"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Добавить" />
+            android:text="Добавить" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

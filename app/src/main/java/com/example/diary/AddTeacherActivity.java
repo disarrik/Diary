@@ -18,8 +18,8 @@ public class AddTeacherActivity extends AppCompatActivity {
         EditText fullName = (EditText) findViewById(R.id.fullNameTeacher);
         EditText phone = (EditText) findViewById(R.id.phoneTeacher);
         EditText cardID = (EditText) findViewById(R.id.cardIDTeacher);
-        EditText position = (EditText) findViewById(R.id.position);
-        EditText qualification = (EditText) findViewById(R.id.qualification);
+        EditText position = (EditText) findViewById(R.id.positionTeacher);
+        EditText qualification = (EditText) findViewById(R.id.qualificationTeacher);
 
 
         Button addTeacher = (Button) findViewById(R.id.addTeacher);
