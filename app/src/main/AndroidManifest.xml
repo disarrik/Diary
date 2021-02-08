@@ -20,7 +20,7 @@
 
         <activity android:name=".AddLearnerActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -28,7 +28,7 @@
 
         <activity android:name=".ShowLearnersActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -36,7 +36,7 @@
 
         <activity android:name=".AddTeacherActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -44,7 +44,7 @@
 
         <activity android:name=".ShowTeachersActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -52,7 +52,7 @@
 
         <activity android:name=".AddEmployeeActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -60,7 +60,7 @@
 
         <activity android:name=".ShowParticipantsActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -68,7 +68,15 @@
 
         <activity android:name=".AddClassActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ShowClassesActivity">
+            <intent-filter>
+
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>

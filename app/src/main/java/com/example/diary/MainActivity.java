@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnShowTeachers = (Button) findViewById(R.id.btnShowTeachers);
         Button btnShowLearners = (Button) findViewById(R.id.btnShowLearners);
         Button btnShowParticipants = (Button) findViewById(R.id.btnShowParticipants);
-        Button btnShowClassWithParents = (Button) findViewById(R.id.btnShowClassWithParents);
+        Button btnShowClasses = (Button) findViewById(R.id.btnShowClassWithParents);
         Button btnShowJournal = (Button) findViewById(R.id.btnShowJournal);
 
         btnAddLearner.setOnClickListener(new View.OnClickListener() {
@@ -78,6 +78,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, AddClassActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnShowClasses.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ShowClassesActivity.class);
                 startActivity(intent);
             }
         });

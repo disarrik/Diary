@@ -11,7 +11,6 @@ public class School {
     private static Class classes[] = {};
     private static Elective electives[] = {};
     private static Section sections[] = {};
-    private static Journal journal;
 
     public static Teacher[] getListTeachers() {
         return teachers;
@@ -25,9 +24,7 @@ public class School {
         return learners;
     }
 
-    public static Journal getElectronicJournal() {
-        return journal;
-    }
+    public static Class[] getClasses() {return classes;}
 
     public static Participant[] getParticipant() {
         Participant[] participants = new Participant[employees.length + teachers.length + learners.length];
